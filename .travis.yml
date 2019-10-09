@@ -1,2 +1,9 @@
+language: generic
 script:
-  - ./test.sh
+- "./test.sh"
+notifications:
+  slack:
+    if: branch = master
+    on_success: change
+    rooms:
+      secure: DSNAG9c/M2Q6Tgd42YqUccCmvxve5+WUmxOF532Ft2nhnfiem96+caXiOSlFZi291VUD1+PjtPLpgr+2RBxTMlpJifGo+is4sx14VSgNKqIJ3RU32eGsSsK0DC4cWhJZXdJtpw+/4LdHcmd7BSfcYHU0slPai/RDtN5Q5tJhU5wPSlgRLmvqFHezY3n9X11oyyMTI7LfrWw5jv+XS/5JC+z3Mn8YoWpOV95Wm8Kd76/cFchmDBSDREY7E6eOlBjPBimcNwev3A3Dy6LIOtzNvU2SqWcRMdfm0ZuISxw/hXiVvFVeTbwsLkhcDLp/VkABXbouo5OzbD/I2KZrKyLdpazlHPmoXUVgkyxIoIRwJInRyvq3vbxUa1Po91yRwWWrzJybpiRbTiOWUvu5VIzfapzzzEg2qZ6nGMHvtexaBBXz3bn3lPnY6XjQzKRo59bIUJ91KkUItfryHuorIKq5VMVhjGROijvvjzDbGIysRY1WdGMjMN/e+gKbhcSooGnvmH4DcA/lSGcvMlaTzqFOQ1z+X/Jfq3qiIwfNi6cw+d6I55PymG0BRqZ58kQfO/MYQAK6gBR/aj+CvskOPec9/yfbDCh81IPMpFQIW+dYwW4s/2NqIetWzu1xPUWsMTGhnDgZxHHyMRE8mF64ORbeRtYITHcNKctJUcy/3ElP7D4=
